@@ -50,10 +50,17 @@ func main() {
 	fmt.Println("Got response")
 	if msg[5] == 13 {
 		fmt.Println("identifier matches")
-	}
+	}else {
+        fmt.Println(msg[5])
+        fmt.Println(msg[4])
+    }
 	if msg[7] == 37 {
 		fmt.Println("Sequence matches")
-	}
+	} else {
+        fmt.Println(msg[7])
+
+        fmt.Println(msg[6])
+    }
 
 	os.Exit(0)
 }
